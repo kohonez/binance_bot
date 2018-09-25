@@ -64,10 +64,13 @@ def programa(symbol, targetact, targetlimit, stopact, stoplimit, quantity):
                 last = coin1['lastPrice']
                 
                 if last<=targetact:                        
-                        client.order_limit_buy(symbol = symbol, quantity = quantity, price = targetlimit, stopPrice = stoplimit)
+                        client.order_limit_buy(symbol = symbol, quantity = quantity, price = targetlimit)
                         print ("Target order Activated for "+symbol+"\n")
                         sold =1
-                
+                if last<=stopact:                        
+                        client.order_limit_sell(symbol = symbol, quantity = quantity, price = stoplimit)
+                        print ("Stop order Activated for "+symbol+"\n")
+                        sold =1
 
         print ("Thanks for using DudeSignals bot.\nObservation: If you want to close this trade setup you must close the bot and if you want to open a new trade go ahead :)\n")
 
