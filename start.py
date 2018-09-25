@@ -9,7 +9,7 @@ import os
 apikey =""
 apisecret = ""
 
-print ("Welcome to DudeSignals.com StopProfit bot V2 stop/takeprofit bot!\n")
+print ("Welcome to Roman bot StopProfit stop/take profit bot!\n")
 
 
 def getdata():
@@ -72,7 +72,7 @@ def programa(symbol, targetact, targetlimit, stopact, stoplimit, quantity):
                         print ("Stop order Activated for "+symbol+"\n")
                         sold =1
 
-        print ("Thanks for using DudeSignals bot.\nObservation: If you want to close this trade setup you must close the bot and if you want to open a new trade go ahead :)\n")
+        print ("Thanks for using Roman_bot.\nObservation: If you want to close this trade setup you must close the bot and if you want to open a new trade go ahead :)\n")
 
 
 z = 0
